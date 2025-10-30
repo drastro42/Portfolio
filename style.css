@@ -7,3 +7,26 @@ p{
         font-family: oswald;
         font-weight: 800;
     }
+
+    h2{
+        font-family: oswald;
+        font-weight: 300;
+        letter-spacing: 1px;
+
+    }
+.primjer {
+ display:contents;
+ 
+}
+
+.poravnanje {
+    text-align: center;
+}
+
+.plutajuce {
+    float: right;
+}
+
+.lista {
+    list-style:circle;
+}
