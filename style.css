@@ -1,32 +1,38 @@
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blue;
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
 }
 
-    h1{
-        font-family: oswald;
-        font-weight: 800;
-    }
+.naslov {
 
-    h2{
-        font-family: oswald;
-        font-weight: 300;
-        letter-spacing: 1px;
+    font-family: sans-serif;
+    color:darkblue;
+    background-color: rgba(101, 140, 255, 0.366);
 
-    }
-.primjer {
- display:contents;
- 
 }
 
-.poravnanje {
-    text-align: center;
+form {
+    background-color: rgba(101, 140, 255, 0.366);
 }
 
-.plutajuce {
+label {
+
+    font-family: sans-serif;
+    font-size: larger;
+    color: darkblue;
+}
+
+.okvir, ::placeholder {
+    color: cornflowerblue;
+}
+
+button {
+    display:inline;
     float: right;
-}
-
-.lista {
-    list-style:circle;
+    color: darkblue;
+    background-color: rgba(105, 105, 105, 0.485);
+    font-family: cursive;
+    font-size: 20px;
+    border: 3cm;
+    border-radius: 4px;
 }

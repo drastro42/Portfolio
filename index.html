@@ -3,49 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Zadaća 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <div>
+        <h1> Ispuni formular</h1>
 
-<body style="background-color: antiquewhite;">
-    <header style="display: flex; justify-content: center; ">
-        <div>
-            <h1>Moj Portfolio</h1>
-        </div>
-    </header>
     <div>
-        <p style="display: flex; justify-content: center; font-style: italic;">Bok</p>
-        <p style="display: flex; justify-content: center;">
-            Moje ime je Iva Oreški i ovo je moj portfolio. 
-        </p>
-        <div class="poravnanje" class="primjer">
-        
-            Ovo je probni tekst na kojem ću demonstrirati <p>korištenje class-a u CSS-u </p>i svojstva display i text-align.
+     <form action="index.html">
+        <fieldset>
+            <legend class="naslov">Osobni podaci</legend> 
+            <label for="Ime">Ime:</label></br>
+            <input class="okvir" type="text" name="Ime" id="Ime" placeholder="Ivan"> </br>
+            <label for="Prezime">Prezime:</label></br>
+            <input class="okvir" type="text" name="Prezime" id="Prezime" placeholder="Horvat"> </br>
+            <label for="rodendan">Datum rođenja:</label></br>
+            <input  class="okvir" type="date" name="rodendan" id="rodendan"> </br>
+            <label for="spol">Spol:</label></br>
+            <select class="okvir" name="spol" id="spol">
+                <option value="nist">Ne želim se izjasniti</option>
+                <option value="zensko">Žensko</option>
+                <option value="musko">Muško</option>
+            </select> </br>
+            <label for="browser">Preko čega ispunjavate anketu?</label> </br>
+            <input class="okvir" list="browsers" name="browser" id="browser">
+              <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+             </datalist> </br> </br>
+            <button type="submit" onclick="alert('Hvala na prijavi!')">Pošalji podatke</button>
+        </fieldset>
         </div>
-        <p class="plutajuce">
-            Ovo je također tekst pomoću kojeg ću pokazati svojstvo floata u CSS-u.
-        
-        </p>
+
+     </form>
     </div>
-    <div >
-        <h2>Što volim raditi:</h2>
-        <ul class="lista">
-            <li><em>nove </em>grafičke elemente</li>
-            <li>dizajniranje <sup>kutije</sup> i karata za remi</li>
-            <li>kreativno se izražavati</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Stvari u dizajnu koje me <span style="color: brown;">zapravo</span> zanimaju:</h2>
-        <ol>
-            <li><strong>vizualni identitet</strong></li>
-            <li>dizajn proizvoda</li>
-            <li>UI<sub>/UX</sub> dizajn</li>
-        </ol>
-    </div>
-        
+
+    
 </body>
 </html>
