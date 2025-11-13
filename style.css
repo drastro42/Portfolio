@@ -1,38 +1,43 @@
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: xx-large;
+html {
+
+    background-color: blanchedalmond;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(2, 80, 16);
 }
 
-.naslov {
+th, td {
 
-    font-family: sans-serif;
-    color:darkblue;
-    background-color: rgba(101, 140, 255, 0.366);
+    border: 2px solid green;
+    border-collapse: collapse;
+    background-color: rgb(224, 251, 233);
+}
+table {
+
+    width: 75%;
+    height: max-content;
+    margin:10px ;
+    padding: 2px;
+    background-color: rgb(190, 248, 210);
+    border: 3px solid rgb(6, 73, 6);
+    border-radius: 5px;
+    border-collapse: separate;
+
+
 
 }
 
-form {
-    background-color: rgba(101, 140, 255, 0.366);
+td {
+    text-align: center;
+    padding: 3px;
 }
 
-label {
-
-    font-family: sans-serif;
-    font-size: larger;
-    color: darkblue;
+td:nth-child(n+2) {
+    color: rgb(66, 142, 59);
 }
 
-.okvir, ::placeholder {
-    color: cornflowerblue;
+#singl {
+
+    color: coral;
 }
 
-button {
-    display:inline;
-    float: right;
-    color: darkblue;
-    background-color: rgba(105, 105, 105, 0.485);
-    font-family: cursive;
-    font-size: 20px;
-    border: 3cm;
-    border-radius: 4px;
-}

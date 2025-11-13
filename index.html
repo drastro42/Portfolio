@@ -3,45 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadaća 3</title>
+    <title>Zadaća 4</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1> Ispuni formular</h1>
+    <h1>Laufey diskografija</h1>
+    <h2><i>(Laufey Lín Jónsdóttir)</i></h2>
+    
+    <h3>Albumi</h3>
+    <table>
+        <thead>
+            <tr>
+            <th>Album </th>
+            <th>Godina izdavanja</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>A Matter of Time</td>
+            <td>2025.</td>
+            </tr>
 
-    <div>
-     <form action="index.html">
-        <fieldset>
-            <legend class="naslov">Osobni podaci</legend> 
-            <label for="Ime">Ime:</label></br>
-            <input class="okvir" type="text" name="Ime" id="Ime" placeholder="Ivan"> </br>
-            <label for="Prezime">Prezime:</label></br>
-            <input class="okvir" type="text" name="Prezime" id="Prezime" placeholder="Horvat"> </br>
-            <label for="rodendan">Datum rođenja:</label></br>
-            <input  class="okvir" type="date" name="rodendan" id="rodendan"> </br>
-            <label for="spol">Spol:</label></br>
-            <select class="okvir" name="spol" id="spol">
-                <option value="nist">Ne želim se izjasniti</option>
-                <option value="zensko">Žensko</option>
-                <option value="musko">Muško</option>
-            </select> </br>
-            <label for="browser">Preko čega ispunjavate anketu?</label> </br>
-            <input class="okvir" list="browsers" name="browser" id="browser">
-              <datalist id="browsers">
-                <option value="Edge">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-             </datalist> </br> </br>
-            <button type="submit" onclick="alert('Hvala na prijavi!')">Pošalji podatke</button>
-        </fieldset>
-        </div>
+            <tr>
+            <td>Bewitched</td>
+            <td>2023.</td>
+            </tr>
 
-     </form>
-    </div>
+            <tr>
+            <td>Everything I Know About Love</td>
+            <td>2022.</td>
+            </tr>
 
+            <tr>
+            <td>A Very Laufey Holiday</td>
+            <td>2024.</td>
+            </tr>
+
+            <tr>
+            <td>A Night at the Symphony</td>
+            <td>2023.</td>
+            </tr>
+
+            <tr>
+            <td>A Night at the Symphony: Hollywood Bowl</td>
+            <td>2024.</td>
+            </tr>
+        </tbody>
+ </table>
+ <h3>Promotivni singlovi</h3>
+ <table>
+    <thead>
+        <tr>
+            <th>Naziv singla</th>
+            <th>Godina izdavanja</th>
+            <th>Album</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Street by street</td>
+            <td rowspan="2">2020.</td>
+            <td rowspan="2">Typical of Me</td>
+        </tr>
+
+        <tr>
+            <td>Someone New</td>
+        </tr>
+
+        <tr>
+           <td id="singl">Love Flew Away</td>
+           <td>2021.</td>
+           <td id="singl">singl</td>
+        </tr>
+
+        <tr>
+            <td>Dear Soulmate</td>
+            <td rowspan="3">2022.</td>
+            <td rowspan="2">Everything I Know About Love</td>
+        </tr>
+
+        <tr>
+            <td>Falling Behind</td>
+        </tr>
+        <tr>
+            <td id="singl">Ain't Christmas</td>
+            <td id="singl"> singl</td>
+        </tr>
+
+        <tr>
+            <td>Valentine</td>
+            <td rowspan="3">2023.</td>
+            <td>A Night at the Symphony</td>
+        </tr>
+
+        <tr>
+            <td>Promise</td>
+            <td rowspan="2">Bewitched</td>
+        </tr>
+
+        <tr>
+            <td>California and Me</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">i ostali :)</td>
+        </tr>
+
+    </tbody>
+
+ </table>
     
 </body>
 </html>
+
