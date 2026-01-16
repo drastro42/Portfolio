@@ -1,43 +1,103 @@
 html {
 
-    background-color: blanchedalmond;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: rgb(2, 80, 16);
+    background-color: rgb(250, 239, 225);
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    background-color: rgb(247, 220, 185);
+  }}
+header {
+    padding: 10px;
+    position: sticky;
+    transform: rotate(14deg);
+}
+h1, h2, h3 {
+    font-family: fantasy;
+    color: rgb(108, 61, 30);
 }
 
-th, td {
-
-    border: 2px solid green;
-    border-collapse: collapse;
-    background-color: rgb(224, 251, 233);
-}
-table {
-
-    width: 75%;
-    height: max-content;
-    margin:10px ;
-    padding: 2px;
-    background-color: rgb(190, 248, 210);
-    border: 3px solid rgb(6, 73, 6);
-    border-radius: 5px;
-    border-collapse: separate;
-
-
-
+div p, ul, ol{
+    font-family:sans-serif;
+    color: rgb(64, 35, 15);
 }
 
-td {
+#naslov {
     text-align: center;
-    padding: 3px;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 
-td:nth-child(n+2) {
-    color: rgb(66, 142, 59);
+a[href*="blood"] {
+    color: brown;
+}
+a:hover {
+    background-color: rgb(97, 58, 38);
+    color: antiquewhite;
+    font-size: larger;
+    transition: background-color 2s;
+}
+.pravila {
+    position: relative;
+    display: contents;
+    top: 20px;
+    left: 20px;
+    clear: both;
+}
+.italic {
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    position: relative;
+    border: 1px rgb(162, 122, 65) solid;
+    background-color: rgba(250, 255, 255, 0.45);
+    padding: 20px;
+    vertical-align: middle;
 }
 
-#singl {
-
-    color: coral;
+ol > li {
+    color: rgb(165, 85, 42);
 }
 
+/* img {
+ width: 560px;
+ margin: auto;
+ margin-top: 5px;
+ display: flex;
+ flex-wrap: wrap;
+ 
+}  */
+iframe {
+    margin: auto;
+    display: flex;
+   flex-wrap: wrap;
+}
+#uvod {
+   padding: 30px;
+   
+}
+
+@media only screen and (max-width:800px) {
+    ul {
+        width: 250px;
+    }
+}
+
+object {
+    width: 560;
+    display: block;
+    margin: auto;
+
+}
+.animacija {
+    position: relative;
+    animation:mjau 3s;
+    animation-direction:alternate ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mjau {
+    from{left:10%;}
+    to{left: 40%;}
+
+}
