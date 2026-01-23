@@ -101,3 +101,10 @@ object {
     to{left: 40%;}
 
 }
+
+#trans:hover {
+    transform: perspective(800px) rotateY(180deg);
+    transition: transform 6s; 
+    backface-visibility: visible;
+
+}
